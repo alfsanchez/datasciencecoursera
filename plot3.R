@@ -15,5 +15,5 @@ legend("topright",lty=c(1,1,1),lwd=c(1,1,1),col=c("Black","Red","Blue"),legend=c
 
 # Save plot as a png file
 
-dev.copy(png,file="plot3.png")
+dev.copy(png,file="plot3.png",width=480,height=480,units="px",bg="white")
 dev.off()

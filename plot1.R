@@ -11,5 +11,5 @@ hist(maindata$Global_active_power,col="Red",xlab="Global Active Power (kilowatts
 
 # Save plot as a png file
 
-dev.copy(png,file="plot1.png")
+dev.copy(png,file="plot1.png",width=480,height=480,units="px",bg="white")
 dev.off()
