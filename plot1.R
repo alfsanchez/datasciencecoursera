@@ -7,9 +7,8 @@ maindata <- cbind(datetime,temp1)
 
 # Create the plot
 
+png(filename="plot1.png",width=480,height=480,units="px",bg="white")
+
 hist(maindata$Global_active_power,col="Red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
 
-# Save plot as a png file
-
-dev.copy(png,file="plot1.png",width=480,height=480,units="px",bg="white")
 dev.off()

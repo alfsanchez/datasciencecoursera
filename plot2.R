@@ -7,10 +7,9 @@ maindata <- cbind(datetime,temp1)
 
 # Create the plot
 
+png(filename="plot2.png",width=480,height=480,units="px",bg="white")
+
 plot(maindata$datetime,maindata$Global_active_power,type="n",xlab="",ylab="Global Active Power (kilowatts)")
 lines(maindata$datetime,maindata$Global_active_power)
 
-# Save plot as a png file
-
-dev.copy(png,file="plot2.png",width=480,height=480,units="px",bg="white")
 dev.off()

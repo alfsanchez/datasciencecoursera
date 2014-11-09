@@ -7,6 +7,8 @@ maindata <- cbind(datetime,temp1)
 
 # Create the plot
 
+png(filename="plot4.png",width=480,height=480,units="px",bg="white")
+
 par(mfrow=c(2,2))
 
 plot(maindata$datetime,maindata$Global_active_power,type="n",xlab="",ylab="Global Active Power")
@@ -24,7 +26,4 @@ legend("topright",lty=c(1,1,1),lwd=c(1,1,1),col=c("Black","Red","Blue"),bty="n",
 plot(maindata$datetime,maindata$Global_reactive_power,type="n",xlab="datetime",ylab="Global_reactive_power")
 lines(maindata$datetime,maindata$Global_reactive_power)
 
-# Save plot as a png file
-
-dev.copy(png,file="plot4.png",width=480,height=480,units="px",bg="white")
 dev.off()
