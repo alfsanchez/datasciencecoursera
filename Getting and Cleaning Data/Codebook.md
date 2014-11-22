@@ -6,6 +6,14 @@ VARIABLES:
 The variables below are the final ones seen in the dataset. The numbers on the first column show the order by which the variable appears in the original "X" data file. The first two variables both have the number 0 in the first column since those were not part of the "X" data file, but rather, of the "Y" and "Subject" data file.
 The second column shows the field names as they appear in the features.txt file provided. The third column provides the recoded variables that reflect a more descriptive name for each field. The nomenclature follows the following convention: << whether time or frequency domain >>_<< gravitational or body motion sensory component >>_<< statistic measured >>_<< axis label, if applicable >>.
 
+The subject number ranges from 1-30 denoting the assigned ID to each of the volunteers.
+
+The Activity variable follows the succeeding recoding as stated in the activity_labels.txt file.
+
+As stated also in the documentation of the raw data files, all the other variables are normalized measures ranging from -1.00 to 1.00.
+
+BElow is the complete list of variables retained:
+
 	0	Subject_number			SubjectNum
 	0	Activity			Activity
 	1	tBodyAcc-mean()-X		time_bodyacc_mean_X
