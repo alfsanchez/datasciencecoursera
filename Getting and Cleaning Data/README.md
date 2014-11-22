@@ -8,8 +8,8 @@ Note that the FINALDATA.TXT is not saved in the repo to avoid confusion. Neverth
 
 ## Set column names for the main data
 
-features <- read.table("features.txt", header=FALSE)
-colnames <- features[,1]
+	features <- read.table("features.txt", header=FALSE)
+	colnames <- features[,1]
 
 ## Set up the training sample
 	xtrain <- read.table("X_train.txt", header=FALSE, col.names=colnames)
@@ -23,6 +23,7 @@ colnames <- features[,1]
 
 ## Prepare to combine data
 
+	library(plyr)
 	xdata_all <- rbind(xtrain,xtest)
 
 		#determine vars to limit the dataset to
